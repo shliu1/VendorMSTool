@@ -1,2 +1,1 @@
-# VendorMSTool
-Vendor USB Tool, it links DLL to work
+# Vendor USB Tool

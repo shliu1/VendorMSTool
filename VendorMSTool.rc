@@ -1,0 +1,242 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Traditional, Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\VendorMSTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VendorMSTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VendorMSTool"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VendorMSTool Version 1.01.002",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010 Nuvoton Technology Corp.",IDC_STATIC,40,25,165,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_VENDORMSTOOL_DIALOG DIALOGEX 0, 0, 483, 263
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VendorMSTool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,432,7,45,16
+    PUSHBUTTON      "Cancel",IDCANCEL,433,28,44,16
+    PUSHBUTTON      "Select File Name :",IDC_BUTTON_SELECT_FILE,23,158,69,14
+    EDITTEXT        IDC_EDIT_SELECT_FILE,24,175,227,14,ES_AUTOHSCROLL
+    LTEXT           "Device Status:",IDC_STATIC,97,30,53,8
+    LTEXT           "Disconnect",IDC_STATIC_SHOW_STATUS,158,30,72,8
+    LTEXT           "Select parameter:",IDC_STATIC,27,112,58,8
+    COMBOBOX        IDC_COMBO_SET_CONTROL_DATA,89,111,71,93,CBS_DROPDOWN | WS_TABSTOP
+    PUSHBUTTON      "Set Control Data",IDC_BUTTON_SET_CONTROL_DATA,25,127,77,14
+    PUSHBUTTON      "Read Data",IDC_BUTTON_UPLOAD,99,158,66,14
+    LTEXT           "Data:  0x",IDC_STATIC,169,114,32,8
+    EDITTEXT        IDC_EDIT_SET_CONTROL_DATA,207,112,56,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "USB Connect",IDC_BUTTON_USB_CONNECT,17,25,63,16,WS_GROUP
+    GROUPBOX        "Read data from device",IDC_STATIC,15,146,365,46
+    GROUPBOX        "Set Control Data",IDC_STATIC,14,100,280,45
+    LTEXT           "Select parameter:",IDC_STATIC,23,57,58,8
+    COMBOBOX        IDC_COMBO_GET_INFORMATION,89,52,71,96,CBS_DROPDOWN | WS_TABSTOP
+    PUSHBUTTON      "Get Information",IDC_BUTTON_GET_INFORMATION,196,73,77,14
+    LTEXT           "Return Data:  0x",IDC_STATIC,23,76,56,8
+    EDITTEXT        IDC_EDIT_GET_INFORMATION,83,73,56,14,ES_AUTOHSCROLL
+    GROUPBOX        "Get Information",IDC_STATIC,14,44,279,52
+    PUSHBUTTON      "Select Write File Name :",IDC_BUTTON_SELECT_WRITEFILE,25,206,97,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SELECT_WRITEFILE,25,222,227,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Write Data",IDC_BUTTON_WRITE,141,205,77,14
+    GROUPBOX        "Write data into device",IDC_STATIC,14,195,366,46
+    COMBOBOX        IDC_COMBO_GET_TARGET,89,7,86,79,CBS_DROPDOWN | WS_TABSTOP
+    LTEXT           "Current Target :",IDC_STATIC,23,7,57,8
+    EDITTEXT        IDC_EDIT_SET_SIZE,192,157,57,14,ES_AUTOHSCROLL
+    LTEXT           "KB",IDC_STATIC,253,159,10,8
+    LTEXT           "Size:",IDC_STATIC,170,158,18,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,14,242,250,14
+    LTEXT           "Param1:",IDC_STATIC,235,30,29,8
+    EDITTEXT        IDC_EDIT_USBCONNECT_P1,269,28,53,14,ES_AUTOHSCROLL
+    LTEXT           "Param2:",IDC_STATIC,337,30,29,8
+    EDITTEXT        IDC_EDIT_USBCONNECT_P2,365,27,52,14,ES_AUTOHSCROLL
+    LTEXT           "Param2:",IDC_STATIC,195,56,29,8
+    EDITTEXT        IDC_EDIT_GET_INFORMATION_P2,229,54,54,14,ES_AUTOHSCROLL
+    LTEXT           "Param2:",IDC_STATIC,175,131,29,8
+    EDITTEXT        IDC_EDIT_SET_CONTROL_DATA_P2,209,129,52,14,ES_AUTOHSCROLL
+    LTEXT           "Param1:",IDC_STATIC,275,155,29,8
+    EDITTEXT        IDC_EDIT_READ_DATA_P1,309,153,52,14,ES_AUTOHSCROLL
+    LTEXT           "Param2:",IDC_STATIC,275,176,29,8
+    EDITTEXT        IDC_EDIT_READ_DATA_P2,309,174,52,14,ES_AUTOHSCROLL
+    LTEXT           "Param1:",IDC_STATIC,277,204,29,8
+    EDITTEXT        IDC_EDIT_WRITE_DATA_P1,311,202,52,14,ES_AUTOHSCROLL
+    LTEXT           "Param2:",IDC_STATIC,277,224,29,8
+    EDITTEXT        IDC_EDIT_WRITE_DATA_P2,311,222,52,14,ES_AUTOHSCROLL
+    LTEXT           "Select Device:",IDC_STATIC,218,7,52,8
+    COMBOBOX        IDC_COMBO_SELECT_DEVICE,272,7,86,79,CBS_DROPDOWN | WS_TABSTOP
+    PUSHBUTTON      "Disconnect All",IDC_BUTTON_CLOSEALL,373,7,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,2
+ PRODUCTVERSION 1,0,1,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Nuvoton Technology Corp."
+            VALUE "FileDescription", "VendorMSTool Application"
+            VALUE "FileVersion", "1.0.1.2"
+            VALUE "InternalName", "VendorMSTool.exe"
+            VALUE "LegalCopyright", "Copyright (C) Nuvoton Technology Corp. All rights reserved."
+            VALUE "OriginalFilename", "VendorMSTool.exe"
+            VALUE "ProductName", "VendorMSTool Application"
+            VALUE "ProductVersion", "1.0.1.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VENDORMSTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 477
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About VendorMSTool..."
+END
+
+#endif    // Chinese (Traditional, Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\VendorMSTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
